@@ -129,7 +129,7 @@ public class BasicApplicationTests extends AbstractIntegrationTest {
         dto.setCustomerId(2);
         dto.setNumber("0987654321");
 
-        // Act & Assert
+        // Act & Assert Test
         mockMvc.perform(MockMvcRequestBuilders.put(url)
                 .contentType("application/json")
                 .content(objectMapper.writeValueAsString(dto)))
